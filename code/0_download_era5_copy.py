@@ -32,8 +32,12 @@ def retrieve(year, variable, new_varname):
         'reanalysis-era5-single-levels',
         {
             'product_type': 'reanalysis',
-            'variable': variable,
-            'year': str(year),
+            'variable': 'total_precipitation',
+            'year': [
+            '2014', '2015', '2016',
+            '2017', '2018', '2019',
+            '2020', '2021', '2022',
+            ],
             'month': [
                 '01', '02', '03',
                 '04', '05', '06',
